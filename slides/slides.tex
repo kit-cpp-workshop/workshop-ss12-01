@@ -12,6 +12,14 @@
 
 \documentclass[18pt]{beamer}
 
+\usepackage[utf8]{inputenc}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage[right]{eurosym}
+\usepackage{listings}
+
 %% SLIDE FORMAT
 
 % use 'beamerthemekit' for standard 4:3 ratio
@@ -29,14 +37,14 @@
 % *.eps format if you use latex+dvips+ps2pdf, 
 % *.jpg/*.png/*.pdf if you use pdflatex)
 
-%\titleimage{mypicture}
+\titleimage{title}
 
 %% TITLE LOGO
 
 % for a custom logo on the front page, copy your file into the 'logos'
 % directory, insert the filename in the line below and uncomment it
 
-%\titlelogo{mylogo}
+\titlelogo{titlelogo}
 
 % (*.eps format if you use latex+dvips+ps2pdf,
 % *.jpg/*.png/*.pdf if you use pdflatex)
@@ -49,22 +57,16 @@
 
 % the presentation starts here
 
-\title[Short title]{Full title:\\ With all details}
-\subtitle{Something for XYZ 2009}
-\author{Firstname1 Lastname1, Firstname2 Lastname2}
+\title[C++ Workshop]{C++ Workshop}
+\subtitle{1. Block, 27.04.2012}
+\author{Markus Jung, Christian Käser, Robert Schneider}
 
-\institute{Chair for Software Design and Quality}
-
-% Bibliography
-
-\usepackage[citestyle=authoryear,bibstyle=numeric,hyperref,backend=biber]{biblatex}
-\addbibresource{templates/example.bib}
-\bibhang1em
+\institute{}
 
 \begin{document}
 
 % change the following line to "ngerman" for German style date and logos
-\selectlanguage{english}
+\selectlanguage{ngerman}
 
 %title page
 \begin{frame}
@@ -72,7 +74,7 @@
 \end{frame}
 
 %table of contents
-\begin{frame}{Outline/Gliederung}
+\begin{frame}{Gliederung}
 \tableofcontents
 \end{frame}
 
@@ -80,7 +82,7 @@
 \subsection{Subsection 1.1}
 \begin{frame}{Example slide A}
 \begin{itemize}
-\item PCM, Citation: \cite{becker2008a} %\language
+\item PCM, Citation: 
 \pause
 \item Bullet point 2
 \item \dots
@@ -125,8 +127,8 @@
 \appendix
 \beginbackup
 
-\begin{frame}[allowframebreaks]{References}
-\printbibliography
+\begin{frame}[allowframebreaks]{Links}
+
 \end{frame}
 
 \backupend
