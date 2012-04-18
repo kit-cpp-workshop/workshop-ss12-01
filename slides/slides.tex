@@ -78,57 +78,119 @@
 \tableofcontents
 \end{frame}
 
-\section{Section 1}
-\subsection{Subsection 1.1}
-\begin{frame}{Example slide A}
-\begin{itemize}
-\item PCM, Citation: 
-\pause
-\item Bullet point 2
-\item \dots
-\end{itemize}
+\section{Versionsverwaltung}
+\subsection{Motivation}
+\begin{frame}{Motivation}
+	\begin{itemize}
+		\item \enquote{Gestern ging es noch \dots}
+		\item \enquote{Das Problem hatten wir doch schon Mal \dots}
+		\item \enquote{Wer hat den ?\&(\%!\$ verzapft!?}
+	\end{itemize}
+	\ \\
+	\pause
+	\ \\
+	\begin{block}{Aufgaben}
+		\begin{itemize}
+			\item Archivierung der Entwicklungsgeschichte
+			\begin{itemize}
+				\item \enquote{Zeitmaschine}
+			\end{itemize}
+			\item Koordination paralleler Entwicklungsvorgänge
+		\end{itemize}
+	\end{block}
 \end{frame}
 
-\subsection{Subsection 1.2}
-\begin{frame}{Example slide B}
-\begin{block}{Block 1}
-\begin{itemize}
-\item Bullet point 1
-\pause
-\item Bullet point 2
-\item \dots
-\end{itemize}
-\end{block}
+\subsection{Konzepte}
+\begin{frame}{Konzepte I}
+	\begin{block}{Version/Revision}
+		Eine Momentaufnahme der verwalteten Dateien, verknüpft mit Metadaten wie Autor oder Datum
+	\end{block}
+	\begin{block}{Versionsgeschichte}
+		Stellt den Bezug zwischen einzelnen Versionen her
+	\end{block}
+	\begin{block}{Repository}
+		Speichert und verwaltet die Versionsgeschichte sowie die zugehörigen Versionen
+	\end{block}
+	\begin{block}{Arbeitskopie}
+		Ein Abbild einer Version im Dateisystem, an dem auch Änderungen vorgenommen werden können
+	\end{block}
+\end{frame}
+\begin{frame}{Konzepte I}
+	\begin{figure}
+		\includegraphics[width=\linewidth]{images/history.png}
+	\end{figure}
+\end{frame}
+\begin{frame}{Konzepte II}
+	% parallele entwicklung: branch, merge, tag
+	\begin{columns}
+		\column{.1\linewidth}
+			\begin{figure}
+				\includegraphics[width=\linewidth]{images/branchmerge.png}
+			\end{figure}
+
+		\column{.9\textwidth}
+			\begin{block}{Branch}
+				\begin{itemize}
+					\item Softwareentwicklung ist selten linear (\enquote{Entwicklungszweig})
+					\item Versionsverwaltungen bilden das durch \enquote{branches} ab
+				\end{itemize}
+			\end{block}
+			\begin{block}{Merge}
+				\begin{itemize}
+					\item Führt Entwicklungszweige zusammen
+					\item Konkurrierende Änderungen können Konfliktlösung erfordern
+				\end{itemize}
+			\end{block}
+			\begin{block}{Tag}
+				Markiert Versionen zum schnellen Zugriff
+			\end{block}
+	\end{columns}
 \end{frame}
 
-\section{Section 2}
-\begin{frame}{Example slide C}
-\begin{exampleblock}{Example 1}
-\begin{itemize}
-\item Bullet point 1
-\pause
-\item Bullet point 2
-\item \dots
-\end{itemize}
-\end{exampleblock}
+\begin{frame}{Zentral vs. Dezentral}
+	\begin{block}{Zentral}
+		Es gibt nur ein Repository über das alle Aktivitäten abgewickelt werden
+		\begin{itemize}
+			\item Erfordert möglichst kontinuierlichen Zugriff auf den Server
+			\item Zentrale Anlaufstelle, damit auch: Konflikt-Brennpunkt
+			\item Vertreter: RCS, CVS, SVN, Visual Source Safe
+		\end{itemize}
+	\end{block}
+	\begin{block}{Dezentral}
+		Jeder Nutzer hat ein (lokales) Repository, Änderungen werden zwischen Repositorys ausgetauscht
+		\begin{itemize}
+			\item Erfordert keinen kontinuierlichen Zugriff auf den Server
+			\item Verschiedene Sichtweisen des gleichen Entwicklungsvorgangs
+			\item Lokales Repository $\rightarrow$ Lokaler Namensraum
+			\item Vertreter: GIT, Mercurial, Bazaar
+		\end{itemize}
+	\end{block}
 \end{frame}
 
-\begin{frame}{Example slide D}
-\begin{alertblock}{Alert 1}
-\begin{itemize}
-\item Bullet point 1
-\pause
-\item Bullet point 2
-\item \dots
-\end{itemize}
-\end{alertblock}
+\subsection{GIT}
+\begin{frame}{GIT}
+\end{frame}
+
+\begin{frame}{GIT Workflow}
+% GIT Workflow: init/clone/checkout/commit/pull/push/branch/merge
+\end{frame}
+
+\begin{frame}{GIT und github}
+% Github: fork/pullreq
+\end{frame}
+
+\begin{frame}{Weiterführende Hinweise}
+% Verweis auf die Hilfe zur Selbsthilfe
+\end{frame}
+
+\begin{frame}{Aufgaben}
+% Aufgaben
 \end{frame}
 
 \appendix
 \beginbackup
 
 \begin{frame}[allowframebreaks]{Links}
-
 \end{frame}
 
 \backupend
