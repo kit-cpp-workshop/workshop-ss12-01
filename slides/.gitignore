@@ -7,4 +7,5 @@
 *.out
 *.run.xml
 *.snm
+*.vrb
 !logos/*
