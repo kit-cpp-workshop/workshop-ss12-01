@@ -121,7 +121,6 @@
 	\end{figure}
 \end{frame}
 \begin{frame}{Konzepte II}
-	% parallele entwicklung: branch, merge, tag
 	\begin{columns}
 		\column{.1\linewidth}
 			\begin{figure}
@@ -129,6 +128,12 @@
 			\end{figure}
 
 		\column{.9\textwidth}
+			\begin{block}{Dezentral}
+				\begin{itemize}
+					\item Jeder Nutzer hat ein (lokales) Repository \\
+					\item Erfordert keinen kontinuierlichen Zugriff auf den Server
+				\end{itemize}
+			\end{block}
 			\begin{block}{Branch}
 				\begin{itemize}
 					\item Softwareentwicklung ist selten linear (\enquote{Entwicklungszweig})
@@ -144,27 +149,7 @@
 			\begin{block}{Tag}
 				Markiert Versionen zum schnellen Zugriff
 			\end{block}
-	\end{columns}
-\end{frame}
-
-\begin{frame}{Zentral vs. Dezentral}
-	\begin{block}{Zentral}
-		Es gibt nur ein Repository über das alle Aktivitäten abgewickelt werden
-		\begin{itemize}
-			\item Erfordert möglichst kontinuierlichen Zugriff auf den Server
-			\item Zentrale Anlaufstelle, damit auch: Konflikt-Brennpunkt
-			\item Vertreter: RCS, CVS, SVN, Visual Source Safe
-		\end{itemize}
-	\end{block}
-	\begin{block}{Dezentral}
-		Jeder Nutzer hat ein (lokales) Repository, Änderungen werden zwischen Repositorys ausgetauscht
-		\begin{itemize}
-			\item Erfordert keinen kontinuierlichen Zugriff auf den Server
-			\item Verschiedene Sichtweisen des gleichen Entwicklungsvorgangs
-			\item Lokales Repository $\rightarrow$ Lokaler Namensraum
-			\item Vertreter: GIT, Mercurial, Bazaar
-		\end{itemize}
-	\end{block}
+\end{columns}
 \end{frame}
 
 \subsection{GIT}
@@ -175,7 +160,6 @@
 \end{frame}
 
 \begin{frame}[fragile,allowframebreaks]{GIT Referenz}
-% GIT Workflow: init/clone/checkout/add/commit/pull/push/branch/merge
 	\begin{block}{Repository erzeugen}
 		\begin{itemize}
 			\item Leeres neues Repository: \verb|git init [<Ordnername>]|
@@ -236,20 +220,32 @@
 \begin{frame}[fragile]{Hilfe zur Selbsthilfe}
 	\begin{itemize}
 		\item \verb|man git| beziehungsweise \verb|git help|
-		\item \url{http://git-scm.com/} - Offizielle Website
 		\item \url{http://help.github.com/} - Github Hilfe
+		\item \url{http://www.youtube.com/watch?v=4XpnKHJAok8} \\
+			Google Talk "Linus Torvalds on Git"
+		\item \url{http://git-scm.com/} - Offizielle Website
+	\end{itemize}
+\ \\
+
+\tiny
+	\begin{itemize}
+		\item \url{https://github.com/Gazler/githug} - Interaktives Git Tutorial
 		\item \url{http://gitref.org/} - Git Referenz
 		\item \url{http://progit.org/book/} - The Pro Git Book
 		\item \url{http://gitready.com/} - Git tips and tricks
-		\item \url{https://github.com/Gazler/githug} - Interaktives Git Tutorial
-		\item \url{http://www.youtube.com/watch?v=4XpnKHJAok8} \\
-			Google Talk "Linus Torvalds on Git"
 	\end{itemize}
 \end{frame}
 
 \subsection{Aufgaben}
-\begin{frame}{Aufgaben}
-% Aufgaben
+\begin{frame}[fragile]{Aufgaben}
+\begin{itemize}
+\item Github: Aufgaben forken, zum clonen HTTPS (statt SSH) nutzen
+\item \verb|git clone https://...|
+\item Änderungen machen
+\item \verb|git add dateiname|
+\item \verb|git commit|
+\item \verb|git push|
+\end{itemize}
 \end{frame}
 
 \appendix
