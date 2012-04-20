@@ -1,0 +1,195 @@
+%% LaTeX-Beamer template for KIT design
+%% by Erik Burger, Christian Hammer
+%% title picture by Klaus Krogmann
+%%
+%% version 2.1
+%%
+%% mostly compatible to KIT corporate design v2.0
+%% http://intranet.kit.edu/gestaltungsrichtlinien.php
+%%
+%% Problems, bugs and comments to
+%% burger@kit.edu
+
+\documentclass[18pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage[right]{eurosym}
+\usepackage{listings}
+
+%% SLIDE FORMAT
+
+% use 'beamerthemekit' for standard 4:3 ratio
+% for widescreen slides (16:9), use 'beamerthemekitwide'
+
+\usepackage{templates/beamerthemekit}
+% \usepackage{templates/beamerthemekitwide}
+
+%% TITLE PICTURE
+
+% if a custom picture is to be used on the title page, copy it into the 'logos'
+% directory, in the line below, replace 'mypicture' with the 
+% filename (without extension) and uncomment the following line
+% (picture proportions: 63 : 20 for standard, 169 : 40 for wide
+% *.eps format if you use latex+dvips+ps2pdf, 
+% *.jpg/*.png/*.pdf if you use pdflatex)
+
+\titleimage{title}
+
+%% TITLE LOGO
+
+% for a custom logo on the front page, copy your file into the 'logos'
+% directory, insert the filename in the line below and uncomment it
+
+\titlelogo{titlelogo}
+
+% (*.eps format if you use latex+dvips+ps2pdf,
+% *.jpg/*.png/*.pdf if you use pdflatex)
+
+%% TikZ INTEGRATION
+
+% use these packages for PCM symbols and UML classes
+% \usepackage{templates/tikzkit}
+% \usepackage{templates/tikzuml}
+
+% the presentation starts here
+
+\title[C++ Workshop]{C++ Workshop}
+\subtitle{1. Block, 27.04.2012\\ orga-Kram}
+\author{Jingfan Ye, Jan Homberg, Robert Schneider}
+
+\institute{}
+
+\begin{document}
+
+% change the following line to "ngerman" for German style date and logos
+\selectlanguage{ngerman}
+
+%title page
+\begin{frame}
+\titlepage
+\end{frame}
+
+%table of contents
+\begin{frame}{Gliederung}
+\tableofcontents
+\end{frame}
+
+\section{Organisatorisches}
+
+
+\subsection{Platzzahl}
+
+\begin{frame}{Begrenzung der Platzzahl}
+	\begin{block}{Warum eine Begrenzung?}
+		\begin{itemize}
+			\item Raumgröße
+			\item Betreuung, Gruppengröße
+		\end{itemize}
+	\end{block}
+	\ \\
+	\pause
+	\ \\
+	\begin{block}{Platzzahl}
+		\begin{itemize}
+			\item Max. 24 Plätze, Betreuer zusätzlich
+			\item Warteschlange (wie bei Sprachkurs)
+			\item online-Teilnahme möglich, Fragen per Mail an FOO@BAR.COM \note{einer muss deligieren}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Wie bekomme ich einen Platz?}
+	Nach folgenden Kriterien werden die Plätze verteilt:
+	\begin{enumerate}
+		\item Anwesenheit heute (27.4.) oder Entschuldigung
+		\item Mindestvoraussetzung erfüllen (\enquote{Programmieren für Physiker}, siehe git repo GIT REPO!!!!!!!)
+		\item Aktive Teilnahme und Interesse (der \emph{Willen}, teilzunehmen und das durchzuziehen)
+		\item first-come, first-served (Wer zuerst kommt, malt zuerst.)
+	\end{enumerate}
+	
+	Nachrücken ist möglich!
+\end{frame}
+
+
+
+\subsection{Organisatorisches}
+
+\begin{frame}{Kontakt, Kooperation}
+	\begin{description}
+		\item[Mailing-List] cpp-workshop@lists.kit.edu
+		\item[github]	\url{www.github.com}, Organization kit-cpp-workshop, Anmeldung via Christian
+	\end{description}
+	\ \\
+	
+	Namen und E-Mail-Adressen:
+	\begin{table}
+		\begin{tabular}{l|l}
+			Christian Käser	&	Christian.Kaeser@student.kit.edu	\\
+			\hline
+			Markus Jung		&	Markus.Jung@stud.uni-karlsruhe.de	\\
+			\hline
+			Matthias Blaicher	&	matthias@blaicher.com	\\
+			\hline
+			Robert Schneider	&	Robert.Schneider3@student.kit.edu	\\
+			\hline
+			Sven Brauch	&	SvenBrauch@googlemail.com	\\
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Der Workshop}
+	\begin{block}{Termin}
+		\begin{itemize}
+			\item jeden Freitag in der Vorlesungszeit
+			\item 15:45-17:15
+			\item Raum: 2-0 (Physik-Hochhaus)
+			\item evtl. Zusatztermine nach Absprache (z.B. cmake)
+		\end{itemize}
+	\end{block}
+	\pause
+	\begin{block}{Ziele}
+		\begin{itemize}
+			\item Erfahrungsaustausch!
+			\item Hilfe zur Selbsthilfe / Anhaltspunkte zum Weiterlernen
+			\item Tiefergehenderer Einblick in die Sprache
+			\item Verschiedene Gebiete von C++ (\enquote{Schweizer Taschenmesser})
+			\item Kooperation, Team-Programmierung
+			\item Software-Design, programming idioms, Fehler vermeiden usw.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Struktur eines Workshops}
+	\begin{block}{Themen}
+		\begin{itemize}
+			\item Richten sich nach den Interessen der Teilnehmer!
+			\item Grundlegende Methodiken, Werkzeuge, ...
+			\item Objektorientierung
+			\item Algorithmen \& Datenstrukturen
+			\item Verwendung von Bibliotheken (statisch, dynamisch gelinkt)
+		\end{itemize}
+	\end{block}
+	\pause
+	\begin{block}{Aufteilung}
+		\begin{itemize}
+			\item Theoretischer Teil, heute: Organisatorisches, git, eclipse
+			\item Praktischer Teil: pair programming (2er-Teams) IDE + hello-world
+			\item Übungen: im praktischen Teil, zu Hause fertig. Vorstellung einiger Lösungen in darauffolgender Woche
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+\appendix
+\beginbackup
+
+\begin{frame}[allowframebreaks]{Links}
+\end{frame}
+
+\backupend
+
+\end{document}
