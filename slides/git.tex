@@ -22,8 +22,8 @@
 
 \subsection{Konzepte}
 \begin{frame}{Konzepte I}
-	\begin{block}{Version/Revision}
-		Eine Momentaufnahme der verwalteten Dateien, verknüpft mit Metadaten wie Autor oder Datum
+	\begin{block}{Version/Revision/Commit}
+		Eine Momentaufnahme der verwalteten Dateien, verknüpft mit Metadaten wie Autor, Datum und einer Beschreibung
 	\end{block}
 	\begin{block}{Versionsgeschichte}
 		Stellt den Bezug zwischen einzelnen Versionen her
@@ -91,7 +91,13 @@
 			\item Neue/geänderte Datei für die nächste Revision vormerken: \verb|git add <Datei/Ordner>|
 			\item Datei aus der Versionskontrolle entfernen: \verb|git rm [--cached] [-r] <Datei/Ordner>|
 			\item Vorgemerkte Änderungen verwerfen: \verb|git reset <Datei/Ordner>|
-			\item Änderungen übernehmen (neue Revision erzeugen): \verb|git commit [-m "commit message"]|
+			\item Änderungen übernehmen (neue Revision erzeugen): \verb|git commit [-m "commit message"]| \\
+				Commit-Message-Styleguide:
+			\begin{itemize}
+				\item Eine Zeile Kurzzusammenfassung
+				\item Danach ggf. eine Leerzeile und weiterer Text
+				\item Zeilenlänge $\le$ 72 Zeichen
+			\end{itemize}
 		\end{itemize}
 	\end{block}
 	\begin{block}{Austausch mit anderen Repositories}
