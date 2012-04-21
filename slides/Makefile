@@ -29,7 +29,7 @@ images:
 	 - make -C $(IMAGEDIR)
 
 clean:
-	- find . | egrep ".*((\.(aux|idx|ind|ilg|log|blg|bbl|toc|lof|lot|dvi|tlf|tlt|nav|snm))|~)$$" | xargs rm
+	- find . | egrep ".*((\.(aux|idx|ind|ilg|log|blg|bbl|toc|lof|lot|dvi|tlf|tlt|nav|snm|vrb))|~)$$" | xargs rm
 	- rm -f $(MAINFILE).out thumb???.png thumbdta.tex thumbpdf.*
 
 .PHONY: clean images
