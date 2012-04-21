@@ -22,7 +22,7 @@ IMAGEDIR       := images
 pdf: $(MAINFILE).tex $(TEXSOURCES) images 
 	- rm -f $(MAINFILE).pdf
 	- rm -f $(MAINFILE).aux
-	pdflatex $(MAINFILE)
+	pdflatex -draftmode -file-line-error $(MAINFILE)
 	pdflatex $(MAINFILE)
 
 images:
