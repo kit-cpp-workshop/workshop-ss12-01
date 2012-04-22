@@ -4,7 +4,7 @@
 
 // Eine Anweisung an den Compiler, eine Datei namens "iostream" einzubinden.
 // ("Datei einbinden" ist etwas ungenau, wer es genau wissen will: siehe
-// Standard 17.4.1.2 Headers, Fußnote 158)
+// Standard 03 17.4.1.2 Headers, Fußnote 158)
 // In diesem Fall ist die Datei ein Teil der C++-Standardbibilothek, mit welchem
 // Ein- und Ausgabe (IO) von Text möglich ist
 #include <iostream>
@@ -23,7 +23,7 @@ int faculty(int n) {
     // und setze deren Wert auf 1
     int result = 1;
     // Lege eine neue lokale Variable mit Namen "i" an, und führe
-    // die Befehle zwischen den Klammern {}, bis i <= n nicht mehr
+    // die Befehle zwischen den Klammern {} aus, bis i <= n nicht mehr
     // erfüllt ist. Nach jedem Durchlauf, erhöhe i um 1 ("i++").
     for ( int i = 1; i <= n; i++ ) {
         result = result * i;
@@ -51,19 +51,23 @@ public: // public members
         return stream.str();
     }
     
+    // Normalerweise gibt es gute Gründe, data members (member variables) private
+    // zu machen, dass also von außen nicht auf sie zugegriffen werden kann.
+    // In diesem einfachen Beispiel verzichten wir darauf, um die Syntax demonstrieren
+    // zu können.
     string name;
     string phoneNumber;
     int postalCode;
 };
 
-// Die Hauptfunktion oder Einstiegspunkt.
+// Die Hauptfunktion oder Einsprungpunkt (entry point).
 // Jedes C++-Programm braucht eine Funktion mit dem Namen "main",
 // wenn es in eine ausführbare Datei kompiliert werden soll. Hier wird mit der
-// Ausführung des codes begonnen (abgesehen von Initialisierungen).
+// Ausführung des Programms begonnen (abgesehen von Initialisierungen).
 int main() {
     // Gibt "Hello, world" auf der Konsole aus, gefolgt von einer Leerzeile.
-	// Detail: endl leert den Puffer, d.h. es wird tatsächlich angezeigt und nicht
-	// (möglicherweise) noch vor der Anzeige gesammelt (gepuffert).
+    // Detail: endl leert den Puffer, d.h. es wird tatsächlich angezeigt und nicht
+    // (möglicherweise) noch vor der Anzeige gesammelt (gepuffert).
     cout << "Hello, world!" << endl;
     
     // Berechnet 8! und gibt das Ergebnis auf der Konsole aus.
@@ -76,6 +80,12 @@ int main() {
     my_contact->postalCode = 76183;
     
     cout << my_contact->toString() << endl;
+    
+    // Lösche das Objekt "my_contact" vom Heap.
+    // Dies ist hier zwar nicht notwendig, da der Heap beim Ende des Programms üblicher-
+    // weise vom Betriebssystem aufgeräumt wird. Das Vergessen von delete an notwendigen
+    // Stellen ist aber eine weit verbreitete Fehlerquelle.
+    delete my_contact;
     
     // Der Rückgabewert des Programms: 0 bedeutet "Erfolg".
     return 0;
