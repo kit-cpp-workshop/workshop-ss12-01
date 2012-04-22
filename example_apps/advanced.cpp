@@ -21,7 +21,7 @@ int faculty(const int n) {
     // und setze deren Wert auf 1
     int result = 1;
     // Lege eine neue lokale Variable mit Namen "i" an, und führe
-    // die Befehle zwischen den Klammern {}, bis i <= n nicht mehr
+    // die Befehle zwischen den Klammern {} aus, bis i <= n nicht mehr
     // erfüllt ist. Nach jedem Durchlauf, erhöhe i um 1 ("i++").
     for ( int i = 1; i <= n; i++ ) {
         result = result * i;
