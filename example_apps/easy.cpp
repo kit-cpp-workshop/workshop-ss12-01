@@ -2,8 +2,10 @@
 /* Dies ist ein mehrzeiliger Kommentar; er kann auch innerhalb einer Zeile beginnen und enden.
  * Er endet erst, wenn folgendes Zeichenpaar auftaucht: */
 
-// Eine Anweisung an den Compiler, eine Datei namens "iostream" einzubinden;
-// in diesem Fall ist das ein Teil der C++-Standardbibilothek, mit welchem
+// Eine Anweisung an den Compiler, eine Datei namens "iostream" einzubinden.
+// ("Datei einbinden" ist etwas ungenau, wer es genau wissen will: siehe
+// Standard 17.4.1.2 Headers, Fußnote 158)
+// In diesem Fall ist die Datei ein Teil der C++-Standardbibilothek, mit welchem
 // Ein- und Ausgabe (IO) von Text möglich ist
 #include <iostream>
 // Die "String"-Klassen aus der C++-Standardbibilothek
@@ -26,13 +28,13 @@ int faculty(int n) {
     for ( int i = 1; i <= n; i++ ) {
         result = result * i;
     }
-    // Rückgabewert der Funktion.
+    // Lege den Rückgabewert der Funktion fest und verlasse die Funktion.
     return result;
 }
 
 // Definiere eine neue Klasse mit Namen "Contact"
 class Contact {
-public: // öffentliche Attribute
+public: // public members
     // Konstruktor: nimmt einen String als Argument
     Contact(string contactName) {
         // setze das Attribut "name" der Klasse auf den übergebenen Wert
@@ -54,10 +56,14 @@ public: // öffentliche Attribute
     int postalCode;
 };
 
-// Das Hauptprogramm. Jedes C++-Programm braucht eine Funktion mit dem Namen "main",
-// wenn es in eine ausführbare Datei kompiliert werden soll.
+// Die Hauptfunktion oder Einstiegspunkt.
+// Jedes C++-Programm braucht eine Funktion mit dem Namen "main",
+// wenn es in eine ausführbare Datei kompiliert werden soll. Hier wird mit der
+// Ausführung des codes begonnen (abgesehen von Initialisierungen).
 int main() {
     // Gibt "Hello, world" auf der Konsole aus, gefolgt von einer Leerzeile.
+	// Detail: endl leert den Puffer, d.h. es wird tatsächlich angezeigt und nicht
+	// (möglicherweise) noch vor der Anzeige gesammelt (gepuffert).
     cout << "Hello, world!" << endl;
     
     // Berechnet 8! und gibt das Ergebnis auf der Konsole aus.
