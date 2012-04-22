@@ -69,7 +69,7 @@ int main() {
     // Berechnet 8! und gibt das Ergebnis auf der Konsole aus.
     cout << "8! = " << faculty(8) << endl;
     
-    // Erstelle ein neues Objekt vom Typ Contact auf dem Stack und speichere einen
+    // Erstelle ein neues Objekt vom Typ Contact auf dem Heap und speichere einen
     // Zeiger darauf in der Variable my_contact
     Contact* my_contact = new Contact("Klaus");
     my_contact->phoneNumber = "0721 748283";
