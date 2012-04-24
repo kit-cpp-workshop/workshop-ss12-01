@@ -9,12 +9,13 @@ Erstelle dir außerdem einen Account auf Github, falls du das noch nicht getan h
 
 ## Aufgabe 1: Hello World
 
-Forke dieses Repository, klone es auf deinen Rechner. Ersetze den Text `Hello World!` durch einen Text mit deinem Namen und lade das Ergebnis hoch.
+Forke dieses Repository, klone es auf deinen Rechner. Ersetze in task01 den Text `Hello World!` durch einen Text mit deinem Namen und lade das Ergebnis hoch.
 
 
 ## Aufgabe 2: Fibonacci-Zahlen
 
 Lies eine Zahl `n` vom Benutzer ein und gib die ersten `n` Fibonacci-Zahlen durch Zeilenumbrüche getrennt auf der Kommandozeile aus.
+Siehe task02.
 
 
 ## Bonusaufgabe: Project Euler
