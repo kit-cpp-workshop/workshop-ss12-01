@@ -1,0 +1,11 @@
+*.toc
+*.pdf
+*.aux
+*.bcf
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.vrb
+!logos/*
