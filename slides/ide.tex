@@ -1,6 +1,10 @@
 \section{Entwicklungsumgebung}
 \begin{frame}{Was ist eine Entwicklungsumgebung?}
-	\begin{block}{Sammlung von Werkzeugen}
+	\begin{block}{IDE}
+		Integrated Development Environment
+	\end{block}
+	\pause
+	\begin{block}{Sammlung \emph{und Integration} von Werkzeugen}
 		\begin{itemize}
 			\item intelligenter Texteditor
 			\item grafischer Debugger
@@ -13,18 +17,26 @@
 \end{frame}
 
 \begin{frame}{Wofür?}
-	\begin{itemize}
-		\item nimmt Arbeit ab
-		\item man muss sich nicht alles merken
-		\item meist übersichtlicher als reine Kommandozeile
-	\end{itemize}
+	\begin{description}
+		\item[grafisch] IDEs sind üblicherweise grafisch, man kann daher viele Dinge über GUIs konfigurieren und anstoßen
+		\item[integriert] es werden zahlreiche Werkzeuge miteinander vereint, z.B. ein Text-Editor mit einem Debugger
+		\item[strukturiert] in der IDE wird zumeist auch die Struktur eines Projektes abgebildet (Ressourcen, source code usw.)
+		\item[editor] die IDE kennt das gesamte Projekt und kann daher die Informationen aus allen Dateien nutzen (autocompletion, definition lookup etc.)
+		\item[code analysis] durch ihre umfassendes Wissen kann die IDE auch den code analysieren, etwa um die Struktur von Klassen darstellen zu können
+		\item[refactoring] das Umstrukturieren von code ist in gewissen Grenzen ebenfalls automatisiert möglich
+	\end{description}
 \end{frame}
 
 \begin{frame}{Beispiele}
 	\begin{itemize}
-		\item Eclipse
-		\item Xcode
+		\item Code::Blocks
+		\item \emph{Eclipse}
+		\item GNU Emacs
 		\item KDevelop
-		\item MS Visual Studio
+		\item NetBeans
+		\item Qt Creator
+		\item proptietär: Visual Studio (Microsoft / Windows)
+		\item proptietär: Xcode (Apple / OS~X, iOS)
+		\item \dots
 	\end{itemize}
 \end{frame}
