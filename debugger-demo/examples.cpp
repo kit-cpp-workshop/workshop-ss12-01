@@ -1,13 +1,4 @@
-//============================================================================
-// Name        : hello-world.cpp
-// Author      : Robert
-// Version     :
-// Copyright   : � cpp-workshop
-// Description : Hello World in C++
-//============================================================================
-
-
-#include <iostream>	// fuer cout, endl
+﻿#include <iostream>	// fuer cout, endl
 
 using namespace std;
 
@@ -54,7 +45,7 @@ int main()
 
 
 
-	// nicht über diese Klammer wundern (ist nur für anschaulicheres Verhalten beim Debuggen)
+	// nicht ueber diese Klammer wundern (ist nur fuer anschaulicheres Verhalten beim Debuggen)
 	{
 
 
@@ -86,8 +77,8 @@ int main()
 
 
 
-	//+ Logik, Sprünge
-	cout << "    Logik, Sprünge" << endl;
+	//+ Logik, Spruenge
+	cout << "    Logik, Spruenge" << endl;
 
 		if(foo == bar)
 		{
@@ -105,10 +96,10 @@ int main()
 		factorial(3);
 
 		cout << "Fakultaet von 5: " << factorial(5) << endl;
-	//- Logik, Sprünge
+	//- Logik, Spruenge
 
 
-	// nicht über diese Klammer wundern
+	// nicht ueber diese Klammer wundern
 	}
 
 
@@ -120,11 +111,11 @@ int main()
 
 
 	//+ continue, Breakpoints
-	cout << "    Logik, Sprünge" << endl;
+	cout << "    Logik, Spruenge" << endl;
 
-		// Mit (F8) wird die Ausführung des Programms bis zum nächsten geplanten Stopp fortgesetzt
+		// Mit (F8) wird die Ausfuehrung des Programms bis zum naechsten geplanten Stopp fortgesetzt
 
-		//+ um dies zu demonstrieren, folgen ein paar unspektakuläre Zeilen
+		//+ um dies zu demonstrieren, folgen ein paar unspektakulaere Zeilen
 			cout << "Don't panic!" << endl;
 			cout << "brain, the size of a planet" << endl;
 
@@ -133,7 +124,7 @@ int main()
 				cout << i << " is not the solution, ";
 			}
 			cout << "42 is the solution!" << endl;
-		//- ein paar unspektakuläre Zeilen
+		//- ein paar unspektakulaere Zeilen
 
 
 		// hier sollte ein breakpoint gesetzt sein
