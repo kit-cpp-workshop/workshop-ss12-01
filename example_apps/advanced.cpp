@@ -15,10 +15,10 @@
 // Benutze den Namensraum der Standardbibilothek
 using namespace std;
 
-// Definiert eine Funktion mit dem Namen "faculty", welche
+// Definiert eine Funktion mit dem Namen "factorial", welche
 // eine ganze Zahl (int) zurück gibt, und eine weitere ganze Zahl
 // als Parameter nimmt.
-int faculty(const int n) {
+int factorial(const int n) {
     // Lege eine neue lokale Variable mit dem Namen "result" an,
     // und setze deren Wert auf 1
     int result = 1;
@@ -90,7 +90,7 @@ int main() {
     cout << "Hello, world!" << endl;
     
     // Berechnet 8! und gibt das Ergebnis auf der Konsole aus.
-    cout << "8! = " << faculty(8) << endl;
+    cout << "8! = " << factorial(8) << endl;
     
     // Erstelle ein neues Objekt vom Typ AdvancedContact auf dem Heap und speichere einen
     // Zeiger darauf in der Variable my_contact
