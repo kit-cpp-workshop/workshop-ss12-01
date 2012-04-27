@@ -28,7 +28,7 @@
 	\begin{block}{Versionsgeschichte}
 		Stellt den Bezug zwischen einzelnen Versionen her
 	\end{block}
-	\begin{block}{Repository}
+	\begin{block}{Repository (kurz: Repo)}
 		Speichert und verwaltet die Versionsgeschichte sowie die zugehörigen Versionen
 	\end{block}
 	\begin{block}{Arbeitskopie}
@@ -94,6 +94,23 @@
 			\item Aufforderung an den Besitzer eines externen Repositories, Änderungen zu übernehmen
 		\end{itemize}
 	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Wie nutzen wir GitHub?}
+	\small{
+		Derzeit (pair programming) ist der Workflow:
+	
+		\begin{enumerate}
+			\item Wir hosten die Materialien zu einem Workshop in einem \emph{repo}.
+			\item Du forkst das repo in deinen GitHub-Account.
+			\item Dann clonest du dir \emph{deinen Fork} auf deinen Rechner (\verb|git clone|).
+			\item Jetzt kannst du mit deiner lokalen Kopie arbeiten, z.B. die Aufgaben lösen.
+			\item Nutze Git auch lokal zur Versionsverwaltung! Committe häufig!
+			\item Veröffentliche deine Änderungen mit \verb|git push| (damit landen sie in deinem Fork bei GitHub).
+			\item Erstelle nach dem Lösen \emph{aller} Aufgaben auf GitHub einen \emph{pull request} und nenne deinen Betreuer im Text.
+			\item Ein Betreuer wird über deine Lösung schauen, diese kommentieren \emph{und den pull request ablehnen}.
+		\end{enumerate}
+	}
 \end{frame}
 
 \subsection{GIT}
