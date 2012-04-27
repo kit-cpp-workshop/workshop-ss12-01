@@ -8,7 +8,17 @@ int main()
 	cout << "How many numbers? " << flush;
 	cin >> n;
 	
-	// Insert your code here
+	int current = 1;
+    int old = 0;
+    
+    for(int i = 0; i < n; i++) {
+        
+        // new Fibonacci number:
+        int temp = current;
+        current += old;
+        old = temp;
+        cout << current << endl;
+    }
 	
 	return 0;
 }
