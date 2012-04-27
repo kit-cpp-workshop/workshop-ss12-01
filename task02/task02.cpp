@@ -8,7 +8,15 @@ int main()
 	cout << "How many numbers? " << flush;
 	cin >> n;
 	
-	// Insert your code here
+	int x1 = 0;
+	int x2 = 1;
+	int z;
+	for(int i=0; i<n; i++){
+		cout << x2 << endl;
+		z = x2;
+		x2 = x1 + x2;
+		x1 = z;
+	}
 	
 	return 0;
 }
