@@ -4,13 +4,19 @@
 
 Der erste Workshoptermin widmet sich vor allem der Vorbereitung, sowie ersten Aufgaben, die in die Materie einführen. Um schnell starten zu können, soll Aufgabe 0 bereits vor dem Workshoptermin bearbeitet werden.
 
+Der Ordner `example_apps` enhält Quelltext in zwei unterschiedlichen Schwierigkeitsgraden. Für den Workshop wird vorausgesetzt, dass jeder Teilnehmer den Inhalt von `easy.cpp` versteht.
+
 ### Folien zum Vortrag
 
-Die Vortragsfolien stehen als [PDF](https://github.com/downloads/kit-cpp-workshop/workshop-ss12-01/slides.pdf) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im Workshop-Repository im Ordner `slides`.
+Die Vortragsfolien stehen als [PDF](https://github.com/downloads/kit-cpp-workshop/workshop-ss12-01/slides.pdf) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im Ordner `slides`.
 
 ###Screencast
 
 Ein Screencast des Vortrags wird nach dem Workshop an dieser Stelle verlinkt.
+
+### Debugger-Demo
+
+Im Rahmen des Vortrags wird eine Einführung in die Funktionalität des Eclipse-Debuggers gegeben. Der dazu verwendete Quelltext liegt im Ordner `debugger-demo`
 
 ## Aufgaben
 
