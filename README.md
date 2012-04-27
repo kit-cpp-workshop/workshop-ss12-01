@@ -28,7 +28,7 @@ Erstelle dir außerdem einen Account auf Github, falls du das noch nicht getan h
  - Forke dieses Repository und klone den Fork auf deinen Rechner
  - Erstelle in Eclipse (bzw. der von dir eingesetzen IDE) ein Projekt im Ordner `task01`
  - Verändere das Programm so, dass anstelle von `Hello World!` ein Text mit deinem Namen ausgegeben wird und führe es aus
-  - Lade das Ergebnis hoch und sende danach einen Pull-Request mit der Überschrift `Hello Github` an das Workshop-Repository
+ - Lade das Ergebnis hoch und sende danach einen Pull-Request mit der Überschrift `Hello Github` an das Workshop-Repository
 
 ### Aufgabe 2: Fibonacci-Zahlen
 
