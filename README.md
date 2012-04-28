@@ -10,9 +10,17 @@ Der Ordner `example_apps` enhält Quelltext in zwei unterschiedlichen Schwierigk
 
 Die Vortragsfolien stehen als [PDF](https://github.com/downloads/kit-cpp-workshop/workshop-ss12-01/slides.pdf) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im Ordner `slides`.
 
-###Screencast
+### Screencast
 
-Ein Screencast des Vortrags wird nach dem Workshop an dieser Stelle verlinkt.
+Eine Aufzeichnung des Vortrags steht zum [Download](http://ubuntuone.com/7Cb4kAX9sbt8gLQhVwpAla) bereit. Da der Ton versehentlich über das interne Mikrofon des Laptops mitgeschnitten wurde, ist die Klangqualität noch verbesserungswürdig.
+
+ - ab 00:00:00 Vorstellung der Organisatoren
+ - ab 00:02:03 Organisatorisches 
+ - ab 00:11:13 git
+ - ab 00:35:58 Demo: git/Github Workflow
+ - ab 00:57:37 Entwicklungsumgebungen
+ - ab 01:04:33 Demo: Eclipse (Grundlagen & Debugging)
+ - ab 01:30:32 Praxis ;)
 
 ### Debugger-Demo
 
