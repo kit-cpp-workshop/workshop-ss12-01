@@ -10,6 +10,10 @@ Der Ordner `example_apps` enhält Quelltext in zwei unterschiedlichen Schwierigk
 
 Die Vortragsfolien stehen als [PDF](https://github.com/downloads/kit-cpp-workshop/workshop-ss12-01/slides.pdf) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im Ordner `slides`.
 
+#### Nachträgliche Hinweise / Errata
+
+Robert hat im Wiki einige [nachträgliche Hinweise](https://github.com/kit-cpp-workshop/workshop-ss12-01/wiki/Nachträgliche-Hinweise) sowie weitere Erläuterungen zum [git/Github-Workflow](https://github.com/kit-cpp-workshop/workshop-ss12-01/wiki/Workflow-mit-Git-und-GitHub) zusammengestellt.
+
 ### Screencast
 
 Eine Aufzeichnung des Vortrags steht zum [Download](http://ubuntuone.com/7Cb4kAX9sbt8gLQhVwpAla) bereit. Da der Ton versehentlich über das interne Mikrofon des Laptops mitgeschnitten wurde, ist die Klangqualität noch verbesserungswürdig.
