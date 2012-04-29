@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 int prime_factors(long int num);
 
