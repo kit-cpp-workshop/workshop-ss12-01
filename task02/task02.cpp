@@ -8,7 +8,18 @@ int main()
 	cout << "How many numbers? " << flush;
 	cin >> n;
 	
-	// Insert your code here
+	int fibonacci[2] = {0,1};
+	bool glied = 0;
+
+	if(n>0) cout << fibonacci[0] <<" ";
+	if(n>1) cout << fibonacci[1] <<" ";
+
+	for(int i=2; i<n; i++){
+		fibonacci[glied] = fibonacci[0] + fibonacci[1];
+		cout << fibonacci[glied] << " ";
+
+		glied = !glied;
+	}
 	
 	return 0;
 }
