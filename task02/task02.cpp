@@ -8,7 +8,8 @@ int main()
 	cout << "How many numbers? " << flush;
 	cin >> n;
 	
-	// Insert your code here
+	int fib[n];
+
 	
 	return 0;
 }
