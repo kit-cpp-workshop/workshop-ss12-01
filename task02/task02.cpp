@@ -8,8 +8,10 @@ int main()
 	cout << "How many numbers? " << flush;
 	cin >> n;
 	
-	for(int i = 1; i < n; i++){
-		cout <<
+	int fibo[n];
+	for(int i = 1, int k = 1; i <= n; i++){
+		cout << i << endl;
+
 	}
 
 	cout <<
