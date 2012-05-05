@@ -8,7 +8,16 @@ int main()
 	cout << "How many numbers? " << flush;
 	cin >> n;
 	
-	// Insert your code here
+	int alt = 0;
+	int neu = 1;
+	int hilf = 1;
+	for( int i = 0; i < n; i++)
+	{
+		cout << neu << endl;
+		hilf = neu;
+		neu = alt + neu;
+		alt = hilf;
+	}
 	
 	return 0;
 }
